@@ -68,3 +68,20 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Change the font styles in all browsers, and remove the margin in Firefox and Safari */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/* Remove the inner padding in Chrome and Safari on macOS */
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}

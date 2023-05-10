@@ -8,7 +8,7 @@ interface LayoutProps {
 function Layout({children}: LayoutProps) {
   return (
     <div className={styles.container}>
-        <main className={styles.main}>{children}</main>
+        {children}
     </div>
   )
 }
