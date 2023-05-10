@@ -1,10 +1,10 @@
-import styles from './NavBar.module.css';
+import styles from './Header.module.css';
 import Link from 'next/link'
 
-const Nav = () => {
+const Header = () => {
   return (
     <header className={styles.header}>
-        <nav>
+        <nav className={styles.navbar}>
             <ul>
                 <li><Link href='/'> Home </Link></li>
                 <li><Link href='/about'> About </Link></li>
@@ -19,5 +19,5 @@ const Nav = () => {
   )
 }
 
-export default Nav
+export default Header
 

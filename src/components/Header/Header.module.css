@@ -1,15 +1,13 @@
-.header {
-
+.navbar {
   height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: black;
   color: white;
-  border: 1px solid blue;
 }
 
-.header ul {
+.navbar ul {
   list-style: none;
   margin: 0;
   padding: 0;

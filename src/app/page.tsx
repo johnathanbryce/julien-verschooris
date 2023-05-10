@@ -2,17 +2,17 @@
 import styles from './page.module.css'
 // internal components
 import Layout from '@/components/Layout/Layout'
-import Nav from '@/components/NavBar/NavBar'
-import Footer from '@/components/Footer/Footer'
+import SoundCloudPlayer from '@/components/SoundCloudPlayer/SoundCloudPlayer'
 
 export default function Home() {
   return (
     <>
-    <Nav />
+    {/* <Nav /> */}
     <Layout>
          Home Page sdfads
+         <SoundCloudPlayer />
     </Layout>  
-    <Footer />
+    {/* <Footer /> */}
     </>
   )
 }
