@@ -56,15 +56,23 @@
     padding: 1rem;
 }
 
-
-.icons_container{
+.bottom_container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     gap: 2rem;
     position: relative;
-    bottom: 15rem;
-    width: 10rem;
+    bottom: 18rem;
 }
+
+.icons_container, .squares_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
 
 .icon_container{
     display: flex;
@@ -77,6 +85,21 @@
     padding-top: 0.65rem;
     font-size: clamp(1.5rem, 2vw, 2rem);
     background-color: white;
+}
+
+.btn_container{
+    width: 25rem; 
+}
+
+.audio_button{
+    font-size: clamp(10rem, 10vw, 20rem);
+    z-index: 999;
+    position: absolute;
+    padding: 0 10%; /* Must match Layout.module.css */
+    width: 100%;
+    top: 40% ;
+    left: 30%;
+    color: rgba(255, 255, 255, 0.7);
 
 }
 

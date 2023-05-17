@@ -2,21 +2,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 5rem;
     color: var(--primaryColor);
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(1.5rem, 2vw, 2.4rem);
     background-color: white;
 }
 
 .icon{
     cursor: pointer;
-
     z-index: 99999;
 }
 
  .icon_container:hover{
     color: var(--highlightColor);
+    transition: var(--hoverTransition);
 
 }

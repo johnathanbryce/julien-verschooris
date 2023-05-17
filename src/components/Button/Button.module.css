@@ -15,9 +15,10 @@
 
 .button_transparent{
     border: 0.1rem solid white;
-    color: var(--fontColorFlip)
+    color: var(--fontColorFlip);
 }
 
 .button_transparent:hover, .button_normal:hover {
-    color: var(--highlightColor)
+    color: var(--highlightColor);
+    transition: var(--hoverTransition);
 }
