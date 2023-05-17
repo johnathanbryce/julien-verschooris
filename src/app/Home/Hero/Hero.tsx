@@ -24,7 +24,6 @@ function Hero() {
   return (
       <section className={styles.hero}>
         <video className={styles.background_clip} src="/backgroundClip.mp4" autoPlay loop muted={isMuted} />  
-
         <div className={styles.overlay}></div>
         <Layout>
           <button onClick={toggleAudio}>

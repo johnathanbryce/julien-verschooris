@@ -11,6 +11,7 @@
 .button_normal{
     border: 0.1rem solid white;
     background-color: var(--backgroundColorFlip);
+    color: var(--primaryColor)
 }
 
 .button_transparent{
