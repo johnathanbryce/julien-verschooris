@@ -1,0 +1,23 @@
+.button_container{
+    width: 18rem; 
+}
+
+.button_normal, .button_transparent{
+    padding: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.button_normal{
+    border: 0.1rem solid white;
+    background-color: var(--backgroundColorFlip);
+}
+
+.button_transparent{
+    border: 0.1rem solid white;
+    color: var(--fontColorFlip)
+}
+
+.button_transparent:hover, .button_normal:hover {
+    color: var(--highlightColor)
+}

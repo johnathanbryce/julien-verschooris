@@ -12,6 +12,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;  */
     overflow-x: hidden; /* for wavey pattern (curve) overflow */
+    
 }
   
   
@@ -22,16 +23,18 @@ main {
 /* Typography */
 p {
     font-size: clamp(1.4rem, 2.8vw, 2rem);
-    color: var(--fontColor);
+    color: var(--fontColorFlip);
     margin: 0;
   }
   
 h1, h2, h3, h4, h5, h6{
-    color: var(--primaryColor);
+    color: var(--fontColorFlip);
+    font-weight: bold;
 }
 
 h1{
-    font-size: clamp(6rem, 2vw, 7rem);
+    font-size: clamp(6rem, 5vw, 10rem);
+    
 }
 
 h2{
