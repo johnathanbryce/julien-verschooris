@@ -1,0 +1,10 @@
+.about{
+    background-color: var(--primaryColor);
+    padding: 4rem 0;
+}
+
+.about_text_container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}

@@ -22,6 +22,7 @@ function Hero() {
   };
 
   return (
+
       <section className={styles.hero}>
         <video className={styles.background_clip} src="/backgroundClip.mp4" autoPlay loop muted={isMuted} />  
         <div className={styles.overlay}></div>
@@ -49,11 +50,9 @@ function Hero() {
               <HeroSquare label="LEARN MORE" src=''/>
             </div>      
           </div>
-
-
-
-        </Layout>
+          </Layout>     
       </section>
+
 
   )
 }

@@ -4,7 +4,6 @@
     gap: 5rem;
     justify-content: space-around;
     align-items: center;
-    margin-top: 4rem;
 }
 
 .image_container{
@@ -64,32 +63,6 @@
     transition: var(--hoverTransition);
 }
 
-
-/* Smaller Web Screens */
-@media only screen and (max-width: 80px){
-    .nominee{
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        gap: 2rem;
-        margin-top: 0rem;
-    }
-
-    .image_container{
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        
-        width: 100%;
-    }
-
-    .coex_image { 
-        display: block; /* display on smaller web / mobile  */
-    }
-
-    .casma_image, .coex_image{
-        width: 30%;  
-    }
-}
 
 /* Phones / Very Small Web Screens */
 @media only screen and (max-width: 800px){
