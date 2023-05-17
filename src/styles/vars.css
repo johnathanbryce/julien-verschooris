@@ -1,24 +1,14 @@
 :root {
-    /* primary & default colors */
-    --primaryColor: '';
-    --primaryColorMedium: '';
-    --primaryColorLight: '';
+   /* primary & default colors */
+   --primaryColor: #011F26;
+   --highlightColor: #ACD1F2;
+   --tertiaryColor: #919091;
 
-   --secondaryColor: '';
-   --secondaryColorMedium: '';
-   --secondaryColorLight: '';
+    --backgroundColor: #011F26;
+    --backgroundColorFlip: white;
 
-    --backgroundColor: '';
-    --defaultColor: '';
-
-    --fontColor: '';
-
-    /* action colors */
-    --negativeColor: '';
-    --successColor: '';
-    --warningColor: '';
-    --disabledColor: '';
-    --primaryColorOffset: '';
+    --fontColor: #011F26;
+    --fontColorFlip: white;
 
     /* border styles */
     --borderRadius: 0.5rem;

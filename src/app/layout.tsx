@@ -2,13 +2,16 @@
 import '../styles/globals.css'
 import '../styles/reset.css'
 import '../styles/vars.css'
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 // internal components
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
 import Layout from '@/components/Layout/Layout'
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 // global meta tags
 export const metadata = {
@@ -26,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}> {/*  applies the font to the body */}
+      <body className={roboto.className}> {/*  applies the font to the body */}
         <Header />
           <main>{children}</main>
         <Footer />

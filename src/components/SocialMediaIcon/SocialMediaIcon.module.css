@@ -1,0 +1,22 @@
+.icon_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+    color: var(--primaryColor);
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    background-color: white;
+}
+
+.icon{
+    cursor: pointer;
+
+    z-index: 99999;
+}
+
+ .icon_container:hover{
+    color: var(--highlightColor);
+
+}
