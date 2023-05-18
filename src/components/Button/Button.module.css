@@ -33,6 +33,17 @@
     .button_normal, .button_transparent{
         padding: 1rem;
         letter-spacing: 0.1rem;
+    } 
+}
+
+/* Small Phone Screens */
+@media only screen and (max-width: 380px){
+    .button_container{
+        width: 10.5rem; 
     }
-    
+
+    .button_normal, .button_transparent{
+        padding: 0.5rem;
+        letter-spacing: 0rem;
+    } 
 }
