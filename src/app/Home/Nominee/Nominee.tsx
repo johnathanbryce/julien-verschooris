@@ -1,14 +1,13 @@
 import React from 'react'
-import Layout from '@/components/Layout/Layout'
 import Image from 'next/image'
 import styles from './Nominee.module.css'
+// internal components
+import Layout from '@/components/Layout/Layout'
 // internal assets
 import nominee from '../../../../public/images/nominee.png'
 import coextinction from '../../../../public/images/coextinction.jpg';
 // external libraries
 import {BsPlayFill} from 'react-icons/bs'
-
-
 
 function Nominee() {
   return (
@@ -32,8 +31,6 @@ function Nominee() {
             <div className={styles.watch_container}>
               <p> WATCH HERE  <BsPlayFill className={styles.watch_button}/>   </p>
             </div>
-            
-            
           </div>
         </section>
       </Layout>

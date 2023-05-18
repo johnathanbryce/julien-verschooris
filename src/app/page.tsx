@@ -1,5 +1,5 @@
 
-import styles from './page.module.css'
+import styles from '../styles/page.module.css'
 // internal components
 import Layout from '@/components/Layout/Layout'
 // internal pages
@@ -17,7 +17,9 @@ export default function Home() {
     <>
       <Hero />
       <Nominee />
-      <About />
+      <div className={styles.full_width_bg_color}>
+        <About />
+      </div>
       <FeaturedWork />
       <MusicSection />
       <SelectedMediaClips />
