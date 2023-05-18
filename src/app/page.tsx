@@ -1,7 +1,5 @@
 
 import styles from '../styles/page.module.css'
-// internal components
-import MainBioImage from '@/components/MainBioImage/MainBioImage'
 // internal pages
 import Hero from './Home/Hero/Hero'
 import Nominee from './Home/Nominee/Nominee'
@@ -21,7 +19,6 @@ export default function Home() {
       <div className={styles.full_width_bg_color}>
         <About />
       </div>
-      <MainBioImage />
       <FeaturedWork />
       <MusicSection />
       <SelectedMediaClips />

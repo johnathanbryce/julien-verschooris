@@ -8,14 +8,7 @@ import mainBioImage from '../../../public/images/mainBioImage.jpg'
 
 function MainBioImage() {
   return (
-    <Layout>
-{/*       <div className={styles.image_container}>
-        <Image
-          className={styles.bio_image}      
-          src={mainBioImage}
-          alt="the icon of the CASMA Nominee 2022 award"
-        />
-      </div> */}
+    <div className={styles.image}>
         <div className={styles.image_container}>
           <Image
             className={`${styles.bio_image} ${styles.box_image}`}      
@@ -24,7 +17,7 @@ function MainBioImage() {
           />
           <div className={styles.box_underlay}></div>
         </div>
-    </Layout>
+    </div>
   )
 }
 
