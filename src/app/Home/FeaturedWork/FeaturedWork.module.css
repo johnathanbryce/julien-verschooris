@@ -1,0 +1,36 @@
+.featured_work{
+    background-image: url('../../../../public/images/featuredWorkBG.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 10%;
+}
+.video_container{
+    width: 100%;
+}
+
+.video_clip {
+    width: 100%;
+    border: 0.2rem solid white;
+}
+
+
+/* Smaller Screen Rezise */
+@media only screen and (max-width: 1200px){
+    .featured_work{
+        padding: 4rem 5rem;
+    }
+}
+
+/* Phones / Very Small Web Screens */
+@media only screen and (max-width: 800px){
+    .featured_work{
+        padding: 0rem 5rem;
+    }
+
+    .featured_work_content{
+        margin-top: -7rem;
+    }
+
+}
+
+

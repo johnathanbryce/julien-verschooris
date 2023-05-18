@@ -1,6 +1,7 @@
 .container{
   background-color: white;
   margin: 0 10%;
+  padding: 0;
 
 }
 
@@ -8,6 +9,6 @@
 @media only screen and (max-width: 1200px){
   .container{
     background-color: white;
-    margin: 3rem 5rem;
+    margin: 0 5rem;
   }
 }

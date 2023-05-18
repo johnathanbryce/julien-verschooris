@@ -1,10 +1,11 @@
-import React from 'react'
+import styles from './SelectedMediaClips.module.css'
 
 function SelectedMediaClips() {
   return (
-    <div>SelectedMediaClips
+    <section className={styles.selected_media}>
+      SelectedMediaClips
 
-    </div>
+    </section>
   )
 }
 
