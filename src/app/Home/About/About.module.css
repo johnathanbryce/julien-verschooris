@@ -12,14 +12,40 @@
 }
 
 .image_container{
-    width: 800rem;
     position: relative;
     top: 10rem;
-
+    width: 800rem;  
 }
 
 .bio_image{
+    display: block;
     width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.box_underlay {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--highlightColor); /* Adjust the background color and opacity as desired */
+    z-index: 1;
+}
+
+/* Smaller Web Screens */
+@media only screen and (max-width: 1300px){
+    .box_underlay{
+        height: 98%;
+    }
+}
+
+@media only screen and (max-width: 1270px){
+    .box_underlay{
+        display: none;
+    }
 }
 
 /* Phones / Very Small Web Screens */
