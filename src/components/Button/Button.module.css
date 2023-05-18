@@ -22,4 +22,17 @@
 .button_transparent:hover, .button_normal:hover {
     color: var(--highlightColor);
     transition: var(--hoverTransition);
+    font-weight: bold;
+}
+
+/* Phones / Tiny Screens */
+@media only screen and (max-width: 500px){
+    .button_container{
+        width: 12.5rem; 
+    }
+    .button_normal, .button_transparent{
+        padding: 1rem;
+        letter-spacing: 0.1rem;
+    }
+    
 }
