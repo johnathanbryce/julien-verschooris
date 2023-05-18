@@ -1,0 +1,42 @@
+.image_container{
+    display: none;
+}
+
+.bio_image{
+    width: 100%;
+}
+
+
+/* Phones / Very Small Web Screens */
+@media only screen and (max-width: 800px){
+    .image_container{
+        display: block;
+        position: relative;
+        left: calc(20% + 6rem);
+        bottom: 12rem;
+        max-width: 40rem;
+    }
+}
+
+/* Smaller Web Screens (btwn 800 - 600 px */
+@media only screen and (max-width: 600px){
+    .image_container{
+        left: calc(20% + 8rem);
+    }
+    .bio_image{
+        width: 60%;
+    }
+}
+
+/* Phones / Tiny Screens */
+@media only screen and (max-width: 500px){
+    .image_container{
+        left: calc(20% + 7.5rem);
+        bottom: 11rem;
+
+    }
+    .bio_image{
+        width: 60%;
+    
+    }
+}

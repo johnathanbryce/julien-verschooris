@@ -1,9 +1,13 @@
 'use client'
 import {useState} from 'react'
 import styles from './About.module.css'
+import Image from 'next/image'
 // internal components
 import Layout from '@/components/Layout/Layout'
 import Button from '@/components/Button/Button'
+import MainBioImage from '@/components/MainBioImage/MainBioImage'
+// internal assets
+import mainBioImage from '../../../../public/images/mainBioImage.jpg'
 
 function About() {
   const [expandReadMore, setExpandReadMore] = useState(false);
@@ -19,17 +23,26 @@ function About() {
   return (
     <Layout>
     <section className={styles.about}>
+      <div>
         <h2> About Julien </h2>
-        <div className={styles.about_text_container}>
-          <p> {firstParagraph} </p>
-          {expandReadMore &&
-            <div className={styles.about_text_container}>
-              <p>{secondParagraph} </p>
-              <p>{thirdParagraph}</p>
-            </div>
-          }
-        <Button label={expandReadMore ? 'Read Less' : 'Read More'} onClick={toggleReadMore} isTransparent={true}/>
-        </div>
+          <div className={styles.about_text_container}>
+            <p> {firstParagraph} </p>
+            {expandReadMore &&
+              <div className={styles.about_text_container}>
+                <p>{secondParagraph} </p>
+                <p>{thirdParagraph}</p>
+              </div>
+            }
+          <Button label={expandReadMore ? 'Read Less' : 'Read More'} onClick={toggleReadMore} isTransparent={true}/>
+          </div>
+      </div>
+      <div className={styles.image_container}>
+        <Image
+          className={styles.bio_image}      
+          src={mainBioImage}
+          alt="the icon of the CASMA Nominee 2022 award"
+        />
+      </div>
     </section>
     </Layout>
 
