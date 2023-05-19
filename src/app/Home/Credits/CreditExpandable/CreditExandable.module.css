@@ -1,0 +1,17 @@
+.expandable{
+    background-color: var(--primaryColor);
+    border: 0.1rem solid white;
+    flex: 1;
+    padding: 2rem;
+}
+
+.flex_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon{
+    font-size: 3rem;
+    cursor: pointer;
+}

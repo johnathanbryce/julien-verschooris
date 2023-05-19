@@ -1,4 +1,5 @@
 import styles from './MediaClip.module.css'
+import Image from 'next/image'
 
 interface MediaClipProps {
     propsList?: any,
@@ -7,11 +8,13 @@ interface MediaClipProps {
     publisher: string,
     subtitle?: string,
     credit?: string,
+    winner?: any,
+    winnerImageSrc?: any
 }
 
-function MediaClip({ title, description, publisher, subtitle, credit}: MediaClipProps) {
+function MediaClip({ title, description, publisher, subtitle, credit, winner, winnerImageSrc}: MediaClipProps) {
   return (
-    <div>
+    <div className={styles.clip_container}>
       <div className={styles.text_container}>
         <h4> {title}</h4>
         <p> {description} </p>
@@ -19,6 +22,7 @@ function MediaClip({ title, description, publisher, subtitle, credit}: MediaClip
         <p> {credit}</p>
         <p> {publisher}</p>
       </div>
+      {winner ? <Image src={winnerImageSrc} alt="Nominee Image" className={styles.winner_image} /> : (null)}
     </div>
   )
 }
