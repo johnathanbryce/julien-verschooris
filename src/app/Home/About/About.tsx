@@ -11,6 +11,7 @@ import mainBioImage from '../../../../public/images/mainBioImage.jpg'
 
 function About() {
   const [expandReadMore, setExpandReadMore] = useState(false);
+  
 
   const toggleReadMore = () =>{
       setExpandReadMore(prevState => !prevState)
@@ -22,7 +23,7 @@ function About() {
   
   return (
     <Layout>
-    <section className={styles.about}>
+    <section className={styles.about} id="about">
       <div>
         <h2> About Julien </h2>
           <div className={styles.about_text_container}>
@@ -42,7 +43,7 @@ function About() {
             src={mainBioImage}
             alt="the icon of the CASMA Nominee 2022 award"
           />
-          <div className={styles.box_underlay}></div>
+          <div className={expandReadMore ? styles.box_underlay_hidden : styles.box_underlay}></div>
       </div>
     </section>
     </Layout>

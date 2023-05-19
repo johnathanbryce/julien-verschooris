@@ -8,9 +8,13 @@
     padding: 1rem;    
 }
 
-.square:hover{
+.square:hover {
     background-color: white;
-    color: var(--fontColor);
     transition: var(--hoverTransition);
     font-weight: bold;
 }
+
+.square p:hover{
+    color: var(--fontColor);
+}
+

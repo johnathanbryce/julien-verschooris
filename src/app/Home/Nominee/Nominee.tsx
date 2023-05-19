@@ -8,6 +8,7 @@ import nominee from '../../../../public/images/nominee.png'
 import coextinction from '../../../../public/images/coextinction.jpg';
 // external libraries
 import {BsPlayFill} from 'react-icons/bs'
+import { Link } from 'react-scroll'
 
 function Nominee() {
   return (
@@ -29,7 +30,9 @@ function Nominee() {
             <h3> Nominee for best original score for a documentary feature film</h3>
             <h4> Coextinction 2022</h4>
             <div className={styles.watch_container}>
-              <p> WATCH HERE  <BsPlayFill className={styles.watch_button}/>   </p>
+              <Link to="featured" spy={true} smooth={true} duration={500} offset={50}>
+                <p> WATCH HERE  <BsPlayFill className={styles.watch_button}/></p>
+              </Link>
             </div>
           </div>
         </section>

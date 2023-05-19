@@ -1,19 +1,17 @@
+'use client'
+import { useState, useRef, useEffect } from 'react'
 import styles from './FeaturedWork.module.css'
-import Image from 'next/image'
 // internal components
 import MainBioImage from '@/components/MainBioImage/MainBioImage'
-// internal assets
-import mainBioImage from '../../../../public/images/mainBioImage.jpg'
+import VideoClip from '@/components/VideoClip/VideoClip'
 
 function FeaturedWork() {
   return (
-    <section className={styles.featured_work}>
+    <section className={styles.featured_work} id="featured">
       <MainBioImage />
       <div className={styles.featured_work_content}>
         <h2>Featured Work</h2>
-        <div className={styles.video_container}>
-          <video className={styles.video_clip} src="/backgroundClip.mp4" controls />  
-        </div>
+      <VideoClip src="/backgroundClip.mp4" border="light" />
       </div>
     </section>
   )
