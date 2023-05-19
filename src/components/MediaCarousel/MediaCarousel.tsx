@@ -1,35 +1,67 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import styles from './MediaCarousel.module.css'
+// external libraries
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 
-interface CarouselProps {
-  itemsInView: number,
-  children: any
+interface MediaCarouselProps {
+  children?: any
 }
 
-const Carousel = ({ itemsInView, children }: CarouselProps) => {
-  const carouselRef: any = useRef(null);
+const MediaCarousel = ({ children }: MediaCarouselProps) => {
+  const scrollableContainerRef = useRef<HTMLDivElement | null>(null);;
 
-  const scrollLeft = () => {
-    carouselRef.current.scrollLeft -= carouselRef.current.offsetWidth / itemsInView;
+
+  const handleMouseDownScrollLeft = () =>{
+    let intervalId = setInterval(() => {
+      onPressScrollTimesContainerLeft();
+    }, 10);
+    
+    const handleMouseUp = () => {
+      clearInterval(intervalId);
+      window.removeEventListener('mouseup', handleMouseUp);
+    };
+    window.addEventListener('mouseup', handleMouseUp);
   };
 
-  const scrollRight = () => {
-    carouselRef.current.scrollLeft += carouselRef.current.offsetWidth / itemsInView;
+  const handleMouseDownScrollRight = () =>{
+    let intervalId = setInterval(() => {
+      onPressScrollTimesContainerRight();
+    }, 10);
+    
+    const handleMouseUp = () => {
+      clearInterval(intervalId);
+      window.removeEventListener('mouseup', handleMouseUp);
+    };
+    
+    window.addEventListener('mouseup', handleMouseUp);
   };
+  
+  const onPressScrollTimesContainerLeft = () =>{
+    console.log(scrollableContainerRef.current)
+    if (scrollableContainerRef.current) {
+      
+      scrollableContainerRef.current.scrollLeft -= 2000;
+    }
+  }
 
+  const onPressScrollTimesContainerRight = () =>{
+    console.log(scrollableContainerRef.current)
+    if (scrollableContainerRef.current) {
+      scrollableContainerRef.current.scrollLeft += 2000;
+    }
+  }
+  
   return (
-    <div className={styles.carousel}>
-      <button className={styles.buttonLeft} onClick={scrollLeft}>
-        &lt;
-      </button>
-      <div className={styles.carousel} ref={carouselRef}>
-        {children}
+    <section className={styles.media_carousel}>
+      <div className={styles.carousel_container} >    
+      <FaChevronLeft className={`${styles.arrow} ${styles.arrow_left}` } onClick={onPressScrollTimesContainerLeft} onMouseDown={handleMouseDownScrollLeft}  />    
+        <div className={styles.scrollable_container} ref={scrollableContainerRef}>
+          {children}
+        </div>
+      <FaChevronRight className={`${styles.arrow} ${styles.arrow_right}`} onClick={onPressScrollTimesContainerRight} onMouseDown={handleMouseDownScrollRight}  />
       </div>
-      <button className={styles.buttonRight} onClick={scrollRight}>
-        &gt;
-      </button>
-    </div>
-  );
-};
+    </section>
+  )
+}
 
-export default Carousel;
+export default MediaCarousel;

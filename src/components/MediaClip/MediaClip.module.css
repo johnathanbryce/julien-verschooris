@@ -9,3 +9,7 @@
 .text_container p, .text_container h4{
     color: var(--primaryColor);
 }
+
+.text_container p{
+    font-size: clamp(1rem, 2vw, 1.6rem)
+}
