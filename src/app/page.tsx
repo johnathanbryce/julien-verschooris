@@ -1,4 +1,5 @@
 
+'use client'
 import styles from '../styles/page.module.css'
 // internal pages
 import Hero from './Home/Hero/Hero'
@@ -8,12 +9,16 @@ import FeaturedWork from './Home/FeaturedWork/FeaturedWork'
 import MusicSection from './Home/MusicSection/MusicSection'
 import SelectedMediaClips from './Home/SelectedMediaClips/SelectedMediaClips'
 import Credits from './Home/Credits/Credits'
+// internal components
+import Header from '@/components/Header/Header'
+import Footer from '@/components/Footer/Footer'
 
-
+import { Element } from 'react-scroll'
 
 export default function Home() {
   return (
     <>
+      <Header />
       <Hero />
       <Nominee />
       <div className={styles.full_width_bg_color}>
@@ -21,8 +26,9 @@ export default function Home() {
       </div>
       <FeaturedWork />
       <MusicSection />
-      <SelectedMediaClips />
-      <Credits />      
+      <SelectedMediaClips/>
+      <Credits/> 
+      <Footer />   
     </>
   )
 }

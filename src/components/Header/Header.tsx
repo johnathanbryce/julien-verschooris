@@ -1,5 +1,6 @@
 import styles from './Header.module.css';
-import Link from 'next/link'
+// external libraries
+import { Link } from 'react-scroll'
 
 const Header = () => {
   return (
@@ -7,11 +8,11 @@ const Header = () => {
       <h3> JV. </h3>
         <nav className={styles.navbar}>
             <ul>
-                <li><Link href='/'> HOME </Link></li>
-                <li><Link href='/'> CREDITS </Link></li>
-                <li><Link href='/'> REEL </Link></li>
-                <li><Link href='/'> ABOUT </Link></li>        
-                <li><Link href='/'> CONTACT </Link></li>
+                <li><Link to="/" spy={true} smooth={true} duration={500} offset={50} > HOME </Link></li>
+                <li><Link to="credits" spy={true} smooth={true} duration={500} offset={50} > CREDITS </Link></li>
+                <li><Link to="reel" spy={true} smooth={true} duration={500}  offset={50}> REEL </Link></li>
+                <li><Link to="about" spy={true} smooth={true} duration={500} offset={50} > ABOUT </Link></li>        
+                <li><Link to="contact" spy={true} smooth={true} duration={500} offset={50} > CONTACT </Link></li>
             </ul>
         </nav>
     </header>

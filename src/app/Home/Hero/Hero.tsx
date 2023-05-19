@@ -10,7 +10,8 @@ import HeroSquare from './HeroSquare/HeroSquare';
 import {SiImdb} from 'react-icons/si'
 import {TbBrandSpotify} from 'react-icons/tb'
 import {FaInstagram} from 'react-icons/fa'
-import {BsPlayFill, BsPauseFill} from 'react-icons/bs'
+import {BsPlayFill, BsPauseFill} from 'react-icons/bs'// external libraries
+import { Link } from 'react-scroll'
 
 function Hero() {
   const [isMuted, setIsMuted] = useState(true);
@@ -27,14 +28,14 @@ function Hero() {
         <video className={styles.background_clip} src="/backgroundClip.mp4" autoPlay loop muted={isMuted} />  
         <div className={styles.overlay}></div>
         <Layout>
-          <button onClick={toggleAudio}>
-            { isPaused ? <BsPauseFill className={styles.audio_button}/> : <BsPlayFill className={styles.audio_button}/>}       
-          </button>
+            <button onClick={toggleAudio}>
+              { isPaused ? <BsPauseFill className={styles.audio_button}/> : <BsPlayFill className={styles.audio_button}/>}       
+            </button>
           <div className={styles.content_container}>
             <div className={styles.intro_content_wrapper}>
               <h1><span className={styles.firstname}>JULIEN</span> VERSCHOORIS </h1>
               <p> A multi award-winning, CASMA-nominated composer, scoring features, and short films as well as commercial music for trailers and branding placements.</p>
-              <div className={styles.btn_container}><Button label={'Learn More'} isTransparent={true} /></div>
+              <div className={styles.btn_container}><Button label={'Learn More'} src="about"isTransparent={true} /></div>
             </div>
           </div>
 
@@ -45,9 +46,9 @@ function Hero() {
               <SocialMediaIcon icon={<FaInstagram />} src='https://www.instagram.com/julienverschooris//'/> 
             </div>
             <div className={styles.squares_container}>
-              <HeroSquare label="VIEW WORK" src=''/>
-              <HeroSquare label="LISTEN TO MUSIC" src='' />
-              <HeroSquare label="LEARN MORE" src=''/>
+              <HeroSquare label="VIEW WORK" src='selected-media-clips'/>
+              <HeroSquare label="LISTEN TO MUSIC" src='reel' />
+              <HeroSquare label="LEARN MORE" src='about'/>
             </div>      
           </div>
           </Layout>     
