@@ -3,7 +3,7 @@ import React from 'react'
 
 function MusicSection() {
   return (
-    <div id='reel'> Music Section </div>
+    <div id='music'> Music Section </div>
   )
 }
 

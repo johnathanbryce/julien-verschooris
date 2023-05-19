@@ -1,4 +1,6 @@
 import styles from './SelectedMediaClips.module.css'
+//internal assets
+import clioGrandAward from '../../../../public/images/clioGrandAward.png'
 // internal components
 import Layout from '@/components/Layout/Layout'
 import MediaClip from '@/components/MediaClip/MediaClip';
@@ -11,9 +13,9 @@ import mediaClipPropsList from '../../lists/mediaCipPropsList'
 function SelectedMediaClips() {
 
   return (
-    <section className={styles.selected_media} id="selected-media-clips" >
+    <section className={styles.selected_media} id="reel" >
       <Layout>
-        <div className={styles.selected_media_column_gap} id="#clips">
+        <div className={styles.selected_media_column_gap} >
           <h2> Selected Media Clips </h2>
           <div  className={styles.media_container_highlight}>
             <div className={styles.media_clip_container_highlight}>
@@ -24,6 +26,8 @@ function SelectedMediaClips() {
                 subtitle="Show: Made for Love"
                 credit="Song: Crazy in Love by Beyonce (Trailer Remix)"
                 publisher="Publisher: Phoenician Order Music"
+                winner={true}
+                winnerImageSrc={clioGrandAward}
               />
             </div>
           </div>
@@ -38,10 +42,10 @@ function SelectedMediaClips() {
                   ) 
                 })}
             </div>
-            {/* ///////////////////////////////////////////////////// */}
+          {/* ///////////////////////////////////////////////////// */}
           </div>
         </Layout>
-        <MediaCarousel>
+        <MediaCarousel carouselType='mediaClips'>
           <div className={styles.media_container}>
             {mediaClipPropsList.map((propsList, index) => {
                 return (

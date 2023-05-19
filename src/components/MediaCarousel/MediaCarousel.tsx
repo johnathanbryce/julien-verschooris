@@ -1,65 +1,94 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import styles from './MediaCarousel.module.css'
 // external libraries
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 
 interface MediaCarouselProps {
-  children?: any
+  children?: any,
+  carouselType: 'mediaClips' | 'posters'
 }
 
-const MediaCarousel = ({ children }: MediaCarouselProps) => {
+const MediaCarousel = ({ children, carouselType }: MediaCarouselProps) => {
   const scrollableContainerRef = useRef<HTMLDivElement | null>(null);;
 
+  let animationFrameId: number | null = null;
 
-  const handleMouseDownScrollLeft = () =>{
-    let intervalId = setInterval(() => {
-      onPressScrollTimesContainerLeft();
-    }, 10);
-    
-    const handleMouseUp = () => {
-      clearInterval(intervalId);
-      window.removeEventListener('mouseup', handleMouseUp);
-    };
+  const handleMouseDownScrollLeft = () => {
+    animationFrameId = requestAnimationFrame(scrollContainerLeft);
     window.addEventListener('mouseup', handleMouseUp);
+    window.addEventListener('mouseleave', handleMouseUp);
   };
 
-  const handleMouseDownScrollRight = () =>{
-    let intervalId = setInterval(() => {
-      onPressScrollTimesContainerRight();
-    }, 10);
-    
-    const handleMouseUp = () => {
-      clearInterval(intervalId);
-      window.removeEventListener('mouseup', handleMouseUp);
-    };
-    
+  const handleMouseDownScrollRight = () => {
+    animationFrameId = requestAnimationFrame(scrollContainerRight);
     window.addEventListener('mouseup', handleMouseUp);
+    window.addEventListener('mouseleave', handleMouseUp);
   };
+
+  const handleMouseUp = () => {
+    if (animationFrameId) {
+      cancelAnimationFrame(animationFrameId);
+      animationFrameId = null;
+    }
+    window.removeEventListener('mouseup', handleMouseUp);
+    window.removeEventListener('mouseleave', handleMouseUp);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+      window.removeEventListener('mouseup', handleMouseUp);
+      window.removeEventListener('mouseleave', handleMouseUp);
+    };
+  }, []);
   
-  const onPressScrollTimesContainerLeft = () =>{
-    console.log(scrollableContainerRef.current)
+  const scrollContainerLeft = () =>{
     if (scrollableContainerRef.current) {
-      
-      scrollableContainerRef.current.scrollLeft -= 2000;
+      if(carouselType === 'mediaClips'){
+        scrollableContainerRef.current.scrollLeft -= 1500;
+      } else if (carouselType === 'posters'){
+        scrollableContainerRef.current.scrollLeft -= 300;
+      } else {
+        console.log('add another carousel type')
+      }
     }
   }
 
-  const onPressScrollTimesContainerRight = () =>{
-    console.log(scrollableContainerRef.current)
+  const scrollContainerRight = () =>{
     if (scrollableContainerRef.current) {
-      scrollableContainerRef.current.scrollLeft += 2000;
+      if(carouselType === 'mediaClips'){
+        scrollableContainerRef.current.scrollLeft += 1500;
+      } else if (carouselType === 'posters'){
+        scrollableContainerRef.current.scrollLeft += 300;
+      } else {
+        console.log('add another carousel type')
+      }
     }
   }
   
   return (
     <section className={styles.media_carousel}>
-      <div className={styles.carousel_container} >    
-      <FaChevronLeft className={`${styles.arrow} ${styles.arrow_left}` } onClick={onPressScrollTimesContainerLeft} onMouseDown={handleMouseDownScrollLeft}  />    
-        <div className={styles.scrollable_container} ref={scrollableContainerRef}>
-          {children}
-        </div>
-      <FaChevronRight className={`${styles.arrow} ${styles.arrow_right}`} onClick={onPressScrollTimesContainerRight} onMouseDown={handleMouseDownScrollRight}  />
-      </div>
+        { carouselType === 'mediaClips' &&
+          <div className={styles.carousel_container} >
+            <FaChevronLeft className={`${styles.arrow} ${styles.arrow_left}` } onClick={scrollContainerLeft} onMouseDown={handleMouseDownScrollLeft}  />    
+            <div className={styles.scrollable_container} ref={scrollableContainerRef}>
+              {children}
+            </div>
+            <FaChevronRight className={`${styles.arrow} ${styles.arrow_right}`} onClick={scrollContainerRight} onMouseDown={handleMouseDownScrollRight}  />
+          </div>
+        }
+        {
+          carouselType === 'posters' &&
+          <div className={styles.carousel_container} >
+            <FaChevronLeft className={`${styles.arrow} ${styles.arrow_unhidden}` } onClick={scrollContainerLeft} onMouseDown={handleMouseDownScrollLeft}  />    
+            <div className={styles.scrollable_container} ref={scrollableContainerRef}>
+              {children}
+              </div>
+              <FaChevronRight className={`${styles.arrow} ${styles.arrow_unhidden}`} onClick={scrollContainerRight} onMouseDown={handleMouseDownScrollRight}  />
+          </div>          
+        }
     </section>
   )
 }
