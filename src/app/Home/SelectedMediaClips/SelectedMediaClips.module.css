@@ -1,4 +1,7 @@
 .selected_media{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
     color: var(--primaryColor);
 }
 
@@ -6,7 +9,7 @@
     color: var(--primaryColor);
 }
 
-.media_container{
+.media_container_highlight{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,8 +19,66 @@
     border: 0.1rem solid var(--primaryColor);
 }
 
+.media_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   /*  gap: 3rem; */                /* NOTE: add in when adding more media clips AND INCREASE WIDTH */
+    width: 200%;                    /* NOTE: 200% allows carousel to show 2 media_clip chunks on screen, INCREASE WITH MORE CONTENT */
+
+}
+
 .media_clip_container{
-    width: 25rem;
-    height: 25rem;
-    border: 1px solid red;
+    border: 0.1rem solid var(--primaryColor);
+    width: 54.5rem;
+}
+
+.media_container_small_screen{
+    display: none
+}
+
+/*  Small Web Screens */
+@media only screen and (max-width: 1350px){
+    .media_clip_container{
+        width: 23%;
+    }
+}
+
+/* LAYOUT CHANGES HERE -- CAROUSEL IS REPLACED BY STANDARD COLUMN LAYOUT*/
+/* Very Small Web Screens */
+@media only screen and (max-width: 800px){
+    .selected_media_column_gap{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .media_container{
+        display: none;
+    }
+
+    .media_container_small_screen{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 4rem;
+        width: 100%;
+
+    }
+}
+
+/* Smaller Web Screens (btwn 800 - 600 px */
+@media only screen and (max-width: 650px){
+    .media_clip_container{
+        width: 16.5%;
+    }
+}
+
+/* Phones / Tiny Screens */
+@media only screen and (max-width: 550px){
+
+}
+
+/* Small Phone Screens */
+@media only screen and (max-width: 420px){
+
 }

@@ -1,4 +1,35 @@
-.carousel{
-    display: flex;
-    gap: 3rem;
+.media_carousel{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
 }
+
+.carousel_container{
+ display: flex;
+ align-items: center;
+}
+
+.scrollable_container{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.arrow{
+    font-size: clamp(3rem, 5vw, 5rem);
+    cursor: pointer;  
+}
+
+.arrow:hover{
+    color: var(--highlightColor);
+}
+
+
+/* Very Small Web Screens */
+@media only screen and (max-width: 800px){
+    .arrow_left, .arrow_right{
+        display: none;
+    }
+}
+
+

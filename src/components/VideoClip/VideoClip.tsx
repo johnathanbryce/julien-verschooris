@@ -36,17 +36,13 @@ function VideoClip({ src, border }: VideoClipProps) {
 
   return (
     <div className={styles.video_container}>
-      {/* <video ref={videoRef} className={styles.video_clip} src={src} /> */}
       <video ref={videoRef} className={`${border === 'light' ? styles.video_clip_light : styles.video_clip_no_border}`} src={src} controls={isVideoPlaying} />
-
       <button className={styles.play_button} onClick={toggleVideo}>
         {isVideoPlaying ? (
            <BsPauseFill className={styles.audio_button_pause} /> 
-         
         ) : (
           <BsPlayFill className={styles.audio_button} />
         )}
-        {/* { isVideoPlaying && <BsPlayFill className={styles.audio_button} />  } */}
       </button>
     </div>
   );

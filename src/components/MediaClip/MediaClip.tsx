@@ -7,11 +7,9 @@ interface MediaClipProps {
     publisher: string,
     subtitle?: string,
     credit?: string,
-    winner?: boolean,
-    winnerImageSrc?: any
 }
 
-function MediaClip({ title, description, publisher, subtitle, credit, winner, winnerImageSrc}: MediaClipProps) {
+function MediaClip({ title, description, publisher, subtitle, credit}: MediaClipProps) {
   return (
     <div>
       <div className={styles.text_container}>
@@ -21,7 +19,6 @@ function MediaClip({ title, description, publisher, subtitle, credit, winner, wi
         <p> {credit}</p>
         <p> {publisher}</p>
       </div>
-      {!winner && <p> winner stuff</p>}
     </div>
   )
 }

@@ -12,8 +12,7 @@ import Credits from './Home/Credits/Credits'
 // internal components
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
-
-import { Element } from 'react-scroll'
+import MediaCarousel from '@/components/MediaCarousel/MediaCarousel'
 
 export default function Home() {
   return (
