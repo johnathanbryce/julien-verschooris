@@ -27,7 +27,7 @@
     padding: 0 10%; /* Must match Layout.module.css */
     width: 100%;
     height: 100%;
-    top: 0rem ;
+    top: 0rem;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -93,12 +93,12 @@
 
 .audio_button{
     font-size: clamp(10rem, 10vw, 20rem);
-    z-index: 999;
+    z-index: 99;
     position: absolute;
     padding: 0 10%; /* Must match Layout.module.css */
-    width: 100%;
+    width: 30%;
     top: 40% ;
-    left: 30%;
+    left: 65%;
     color: rgba(255, 255, 255, 0.7);
 }
 

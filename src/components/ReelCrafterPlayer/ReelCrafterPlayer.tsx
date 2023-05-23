@@ -1,13 +1,16 @@
 import styles from './ReelCrafterPlayer.module.css'
-// internal components
-import ReelCrafterSong from './ReelCrafterSong/ReelCrafterSong'
 
-function SoundCloudPlayer() {
+function ReelCrafterPlayer() {
   return (
-    <section className={styles.soundcloud_container}>
-      <ReelCrafterSong src={``} color={``} />
+    <section className={styles.reelcraft_container}>
+      <iframe
+      className={styles.iframe_container}
+      width="100%"
+      scrolling="no"
+      src="https://play.reelcrafter.com/embed/a7d397b8-f5aa-4f16-98ed-ffe810f0555d">
+    </iframe>
     </section>
   )
 }
 
-export default SoundCloudPlayer
+export default ReelCrafterPlayer

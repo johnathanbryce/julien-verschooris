@@ -1,3 +1,6 @@
+.credits{
+    padding: 4rem 0;
+}
 .credits, .credits_container{
     background-color: var(--primaryColor);
     color: white;
