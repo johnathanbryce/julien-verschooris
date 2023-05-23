@@ -5,8 +5,6 @@ import Layout from '../Layout/Layout'
 // internal assets
 import mainBioImage from '../../../public/images/mainBioImage.jpg'
 
-console.log(mainBioImage)
-
 function MainBioImage() {
   return (
     <div className={styles.image}>
