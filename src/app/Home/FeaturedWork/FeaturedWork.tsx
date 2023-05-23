@@ -11,7 +11,7 @@ function FeaturedWork() {
       <MainBioImage />
       <div className={styles.featured_work_content}>
         <h2>Featured Work</h2>
-      <VideoClip src="/backgroundClip.mp4" border="light" />
+      <VideoClip src="/coextinction.mp4" border="light" />
       </div>
     </section>
   )

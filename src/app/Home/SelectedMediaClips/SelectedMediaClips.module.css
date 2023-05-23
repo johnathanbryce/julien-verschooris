@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 5rem;
     color: var(--primaryColor);
+    padding: 4rem 0;
 }
 
 .selected_media h2{

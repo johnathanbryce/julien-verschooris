@@ -23,7 +23,9 @@ export default function Home() {
         <About />
       </div>
       <FeaturedWork />
-      <MusicSection />
+      <div className={styles.full_width_bg_color}>
+        <MusicSection />
+      </div>
       <SelectedMediaClips/>
       <div className={styles.full_width_bg_color}>
         <Credits/> 
