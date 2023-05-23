@@ -49,7 +49,7 @@ const MediaCarousel = ({ children, carouselType }: MediaCarouselProps) => {
       if(carouselType === 'mediaClips'){
         scrollableContainerRef.current.scrollLeft -= 1500;
       } else if (carouselType === 'posters'){
-        scrollableContainerRef.current.scrollLeft -= 300;
+        scrollableContainerRef.current.scrollLeft -= 400;
       } else {
         console.log('add another carousel type')
       }
@@ -61,7 +61,7 @@ const MediaCarousel = ({ children, carouselType }: MediaCarouselProps) => {
       if(carouselType === 'mediaClips'){
         scrollableContainerRef.current.scrollLeft += 1500;
       } else if (carouselType === 'posters'){
-        scrollableContainerRef.current.scrollLeft += 300;
+        scrollableContainerRef.current.scrollLeft += 400;
       } else {
         console.log('add another carousel type')
       }
