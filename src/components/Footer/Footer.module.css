@@ -1,3 +1,41 @@
 .footer{
-    padding: 2rem 10rem;
+    display: flex;
+    background-color: var(--primaryColor);
+    padding: 2rem 12%; 
+    gap: 2rem;
+    min-height: 30rem;
 }
+
+.footer_left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1.5;
+}
+
+.footer_right{
+    display: flex;
+    gap: 3rem;
+    flex: 1.4;
+}
+
+.other, .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer_left p, .footer_left div p, .contact div p, .other div p {
+    font-size: clamp(1.2rem, 2vw, 1.6rem)
+}
+
+/* Phones / Very Small Web Screens */
+@media only screen and (max-width: 1200px){
+    .footer_left, .footer_right{
+        flex: 1;
+    }
+    .other{
+        display: none;
+    }
+}
+

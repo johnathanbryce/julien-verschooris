@@ -2,4 +2,13 @@
     background-color: var(--primaryColor);
 }
 
+.horizontal_line_break{
+    background-color: var(--primaryColor);
+    height: 0.1rem;
+    width: 85%;
+    padding: 0 10%;
+    margin: 0 auto;
+    border: 0.1rem solid white;
+}
+
 

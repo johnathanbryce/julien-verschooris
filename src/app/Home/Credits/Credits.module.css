@@ -45,9 +45,6 @@
     transition: var(--hoverTransition);
 }
 
-
-
-
 /* Very Small Web Screens */
 @media only screen and (max-width: 800px){
     .media_container{
