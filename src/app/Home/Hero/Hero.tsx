@@ -28,9 +28,9 @@ function Hero() {
         <video className={styles.background_clip} src="/backgroundClip.mp4" autoPlay loop muted={isMuted} />  
         <div className={styles.overlay}></div>
         <Layout>
-            <button onClick={toggleAudio} className={styles.audio_button_container}>
-              { isPaused ? <BsPauseFill className={styles.audio_button}/> : <BsPlayFill className={styles.audio_button}/>}       
-            </button>
+          <button onClick={toggleAudio} className={styles.audio_button_container}>
+            { isPaused ? <BsPauseFill className={styles.audio_button}/> : <BsPlayFill className={styles.audio_button}/>}       
+          </button>
           <div className={styles.content_container}>
             <div className={styles.intro_content_wrapper}>
               <h1><span className={styles.firstname}>JULIEN</span> VERSCHOORIS </h1>
@@ -53,8 +53,6 @@ function Hero() {
           </div>
           </Layout>     
       </section>
-
-
   )
 }
 

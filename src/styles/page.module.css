@@ -4,10 +4,9 @@
 
 .horizontal_line_break{
     background-color: var(--primaryColor);
-    height: 0.1rem;
+    height: 0;
     width: 85%;
-    padding: 0 10%;
-    margin: 0 auto;
+    margin: 0 10%;
     border: 0.1rem solid white;
 }
 

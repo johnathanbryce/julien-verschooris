@@ -4,6 +4,7 @@
     gap: 5rem;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 .image_container{
@@ -84,7 +85,7 @@
     }
 
     .casma_image, .coex_image{
-        width: 30%;  
+        width: 80%;  
     }
 
     .text_container{
