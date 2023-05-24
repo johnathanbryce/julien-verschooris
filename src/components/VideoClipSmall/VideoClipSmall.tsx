@@ -36,7 +36,7 @@ function VideoClipSmall({ src, border }: VideoClipSmallProps) {
 
   return (
     <div className={styles.video_container}>
-      <video ref={videoRef} className={`${border === 'light' ? styles.video_clip_light : styles.video_clip_no_border}`} src={src} controls={isVideoPlaying} />
+      <video ref={videoRef} playsInline className={`${border === 'light' ? styles.video_clip_light : styles.video_clip_no_border}`} src={src} controls={isVideoPlaying} />
       <button className={styles.play_button} onClick={toggleVideo}>
         {isVideoPlaying ? (
            <BsPauseFill className={styles.audio_button_pause} /> 
