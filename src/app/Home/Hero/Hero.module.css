@@ -189,16 +189,9 @@
         display: none;
     }
 
-     .intro_content_wrapper > *{
-        border: 1px solid red;
-     }
-
      .intro_content_wrapper h1{
         width: 100%;
      }
 }
 
-/* Galaxy fold / < 300 px tiny screens */
-@media only screen and (max-width: 300px){
 
-}
