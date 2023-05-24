@@ -20,11 +20,11 @@ function Nominee() {
               src={nominee}
               alt="the icon of the CASMA Nominee 2022 award"
             />
-            <Image
+{/*             <Image
               className={styles.coex_image}      
               src={coextinction}
               alt="the poster of the Coextinction documentary"
-            />
+            /> */}
           </div>
           <div className={styles.text_container}>
             <h3> Nominee for best original score for a documentary feature film</h3>

@@ -4,6 +4,7 @@ html {
     font-size: 62.5%; /* 100% would be 16 px so now, 1 rem = 10px */
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -21,7 +22,7 @@ main {
 
 /* Typography */
 p {
-    font-size: clamp(1.4rem, 2.8vw, 2rem);
+    font-size: clamp(1.6rem, 2.8vw, 2rem);
     color: var(--fontColorFlip);
     margin: 0;
   }
@@ -32,20 +33,20 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-    font-size: clamp(6rem, 5vw, 10rem);
+    font-size: clamp(5rem, 5vw, 10rem);
     
 }
 
 h2{
-    font-size: clamp(4.2rem, 5vw, 6.5rem);
+    font-size: clamp(3rem, 4.5vw, 6.5rem);
 }
 
 h3{
-    font-size: clamp(3rem, 4vw, 3.8rem);
+    font-size: clamp(2.4rem, 3.5vw, 3.8rem);
 }
 
 h4 {
-    font-size: clamp(2.4rem, 4vw, 3rem);
+    font-size: clamp(2rem, 4vw, 3rem);
 }
 
 h5 {
@@ -54,4 +55,11 @@ h5 {
 
 h6 {
     font-size: clamp(1.8rem, 4vw, 2rem);
+}
+
+/* Galaxy fold / < 300 px tiny screens */
+@media only screen and (max-width: 300px){
+  h1{
+    font-size: 3.5rem;
+  }
 }

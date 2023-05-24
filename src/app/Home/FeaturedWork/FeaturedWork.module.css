@@ -4,6 +4,12 @@
     background-position: center;
     padding: 4rem 10%;
 }
+
+.featured_work_content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 .video_container{
     width: 100%;
     position: relative;
@@ -61,21 +67,22 @@
     .play_button {
         top: 30%;
         left: 40%;
-
     }
 }
 
 /* Small Phone Screens */
 @media only screen and (max-width: 520px){
-
+    .featured_work_content{
+       display: flex;
+       flex-direction: column;
+       gap: 3rem;
+    }
 }
 
 /* Very Small Phone Screens */
 @media only screen and (max-width: 420px){
     .play_button {
         top: 25%;
-
-
     }
 }
 

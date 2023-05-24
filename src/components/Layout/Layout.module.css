@@ -12,3 +12,10 @@
     margin: 0 5rem;
   }
 }
+
+/* Galaxy fold / < 300 px tiny screens */
+@media only screen and (max-width: 300px){
+  .container{
+    margin: 0 1rem;
+  }
+}

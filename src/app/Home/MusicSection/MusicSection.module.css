@@ -1,4 +1,7 @@
 .music{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     background-color: var(--primaryColor);
     padding: 4rem 0;
 }

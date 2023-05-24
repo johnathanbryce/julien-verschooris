@@ -7,12 +7,13 @@
     border: 0.2rem solid white;
 }
 .video_clip_light, .video_clip_no_border {
+    height: 100%;
     width: 100%;
 }
 
 .play_button, .audio_button_pause {
     position: absolute;
-    top: 40%;
+    top: 37%;
     left: 42.5%;
     font-size: clamp(7rem, 10vw, 20rem);
     z-index: 999;
@@ -59,8 +60,26 @@
 
 /* Very Small Phone Screens */
 @media only screen and (max-width: 420px){
+    .video_container{
+        width: 100%;
+        position: relative;
+    }
+
+    .video_clip_light, .video_clip_no_border {
+        width: 100%;
+        
+    }
     .play_button {
-        top: 25%;
+        top: 20%;
+        left: 38%;
+    }
+}
+
+/* Galaxy fold / < 300 px tiny screens */
+@media only screen and (max-width: 300px){
+    .play_button {
+        top: 8%;
+        left: 28.5%;
     }
 }
 
