@@ -26,7 +26,7 @@ function Hero() {
 
       <section className={styles.hero}>
         <video className={styles.background_clip} src="/backgroundClip.mp4" muted={isMuted} autoPlay playsInline loop preload='auto'/>  
-        <div className={styles.overlay}></div>
+        {/* <div className={styles.overlay}></div> */}
         <Layout>
           <button onClick={toggleAudio} className={styles.audio_button_container}>
             { isPaused ? <BsPauseFill className={styles.audio_button}/> : <BsPlayFill className={styles.audio_button}/>}       
