@@ -14,14 +14,14 @@
     position: relative;
 }
 
-.overlay{
+/* .overlay{
     position: absolute;
     left: 0;
     width: 100%;
     height: 93vh;
     top: 8rem;
     background-color: rgba(0,0,0,0.5);
-}
+} */
 
 .content_container{
     z-index: 1;
@@ -109,26 +109,24 @@
     transition: var(--hoverTransition);
 }
 
-/* Overlay adjustments */
-@media only screen and (max-width: 1380px){
+
+/* @media only screen and (max-width: 1380px){
     .overlay{
         height: 92vh;
     }
 }
 
-/* Overlay adjustments II */
 @media only screen and (max-width: 1340px){
     .overlay{
         height: 91.5vh;
     }
 }
 
-/* Overlay adjustments II */
 @media only screen and (max-width: 1300px){
     .overlay{
         height: 88vh;
     }
-}
+} */
 
 
 /* Smaller Screen Rezise */
@@ -137,10 +135,9 @@
         padding: 0 5rem; /* Must match Layout.module.css */
     }
 
-    .overlay{
-        height: 86.25vh;
-        
-    }
+/*     .overlay{
+        height: 86.25vh; 
+    } */
 }
 
 /* Phones / Very Small Web Screens */
@@ -178,9 +175,9 @@
         margin-bottom: -7rem;
     }
     
-    .overlay{
+/*     .overlay{
         display: none;
-    }
+    } */
     
     .audio_button{
         width: 30%;
@@ -193,8 +190,11 @@
     }
 
      .intro_content_wrapper > *{
-        text-align: center;
-        justify-content: center;
+        border: 1px solid red;
+     }
+
+     .intro_content_wrapper h1{
+        width: 100%;
      }
 }
 
