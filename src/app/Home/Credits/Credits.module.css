@@ -55,23 +55,3 @@
     }
     
 }
-
-/* Smaller Web Screens (btwn 800 - 600 px */
-@media only screen and (max-width: 650px){
-
-}
-
-/* Phones / Tiny Screens */
-@media only screen and (max-width: 550px){
-
-}
-
-/* Small Phone Screens */
-@media only screen and (max-width: 420px){
-
-}
-
-/* Galaxy fold / < 300 px tiny screens */
-@media only screen and (max-width: 300px){
-
-}
