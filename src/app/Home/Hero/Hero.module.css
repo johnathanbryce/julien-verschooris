@@ -6,6 +6,22 @@
     margin-bottom: -2rem;
 }
 
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+  
+  .fade_in {
+    animation: fade-in 1.5s ease-in;
+  }
+
 .background_clip {
     z-index: -999;
     width: 100%;

@@ -5,8 +5,8 @@
 }
 
 .carousel_container{
- display: flex;
- align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .scrollable_container{
@@ -25,6 +25,10 @@
     color: var(--highlightColor);
 }
 
+.arrow_left, .arrow_right{
+    opacity: 0; /* REMOVE THIS WHEN MORE VIDEOS ADDED TO SELECTED MEDIA CLIPS CAROUSEL */
+}
+
 
 /* Very Small Web Screens */
 @media only screen and (max-width: 800px){
@@ -32,6 +36,8 @@
         display: none;
     }
 }
+
+
 
 /* Galaxy fold / < 300 px tiny screens */
 @media only screen and (max-width: 300px){

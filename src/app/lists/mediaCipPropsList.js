@@ -15,24 +15,7 @@ const mediaClipPropsList = [
       credit: 'Starring: Martin Freeman',
       subtitle: "Production: Vertical",
       publisher:"Publisher: Phoenician Order Music"
-    },
-    {
-      video:'/theOperative.mp4',
-      title:'TRAILER 3',
-      description: "Track from Phoenician Order Music catalog used in the trailer",
-      credit: 'Starring: Martin Freeman',
-      subtitle: "Production: Vertical",
-      publisher:"Publisher: Phoenician Order Music"
-    },
-    {
-      video:'/theOperative.mp4',
-      title:'TRAILER 4',
-      description: "TEST4",
-      credit: 'Starring: Martin Freeman',
-      subtitle: "Production: Vertical",
-      publisher:"Publisher: Phoenician Order Music"
-    },
-    
+    }   
 ]
 
 export default mediaClipPropsList;

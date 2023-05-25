@@ -16,7 +16,7 @@
 }
 
 .casma_image, .coex_image{
-    width: 100%;  
+    width: 80%;  
 }
 
 .text_container{
@@ -85,7 +85,7 @@
     }
 
     .casma_image, .coex_image{
-        width: 80%;  
+        width: 40%;  
     }
 
     .text_container{

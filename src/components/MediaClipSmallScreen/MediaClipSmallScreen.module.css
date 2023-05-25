@@ -1,0 +1,83 @@
+.clip_container{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    background-color: var(--primaryColor);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.clip_container_row_reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2.5rem;
+    background-color: var(--primaryColor);
+    padding: 2rem;
+    border-radius: 0.5rem;
+
+}
+
+.text_container * {
+    color: var(--fontColorFlip);
+}
+
+.text_container_reverse * {
+    color: var(--fontColor);
+}
+
+.image_container{
+    flex: 0.5;
+}
+
+.text_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.text_container p{
+    font-size: clamp(1.2rem, 2vw, 2rem)
+}
+
+.image, .video{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.video_container {
+    width: 20rem;
+    height: 20rem;
+}
+
+.winner_image{
+    width: 12.5%;
+    object-fit: contain;
+}
+
+.watch_container{
+    display: flex;
+    align-items: center;
+}
+
+.watch_here {
+    margin-top: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.watch_here:hover{
+    color: var(--highlightColor);
+    letter-spacing: 0.25rem;
+}
+
+.watch_button{  
+    margin-top: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+

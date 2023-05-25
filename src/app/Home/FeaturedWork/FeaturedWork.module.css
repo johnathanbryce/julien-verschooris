@@ -34,6 +34,10 @@
     color: rgba(255, 255, 255, 0.9);
     transition: var(--hoverTransition);
 }
+
+.media_container_small_screen{
+    display: none;
+}
   
 
 
@@ -51,15 +55,18 @@
     }
 
     .featured_work_content{
-        margin-top: -7rem;
+        display: none;
     }
 
     .play_button {
         top: 32.5%;
-        /* left: 40.5%; */
-
     }
 
+    .media_container_small_screen{
+        display: block;
+        padding: 2.5rem 0;
+
+    }
 }
 
 /* Phones / Tiny Screens */
@@ -72,11 +79,7 @@
 
 /* Small Phone Screens */
 @media only screen and (max-width: 520px){
-    .featured_work_content{
-       display: flex;
-       flex-direction: column;
-       gap: 3rem;
-    }
+
 }
 
 /* Very Small Phone Screens */
