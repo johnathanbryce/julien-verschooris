@@ -1,0 +1,87 @@
+.modal_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.modal_background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.video_container {
+    position: fixed;
+    width: 100vw;
+}
+
+.video{
+    width: 100vw;
+    height: auto;
+}
+
+
+
+.close_btn_container{
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+    border: 0.1rem solid lightgrey;
+    display: flex;
+    border-radius: 50%;
+}
+
+.close_btn{
+    display: none;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.close_btn:hover{
+    transition: 0.2s ease-in-out;
+    color: var(--highlightColor);
+}
+
+
+/* Phone Screens */
+@media only screen and (max-width: 490px){
+    .close_btn{
+        display: block;
+    }
+
+    .close_btn_container{
+        left: 91.5%;
+        top: 36.8%;
+    }
+}
+
+/* Very Small Phone Screens */
+@media only screen and (max-width: 385px){
+    .close_btn_container{
+        left: 91.5%;
+        top: 34%;
+    }
+}
+
+/* Galaxy fold / < 300 px tiny screens */
+@media only screen and (max-width: 300px){
+    .close_btn_container{
+        left: 90.5%;
+        top: 36.8%;
+    }
+}
+
+
+

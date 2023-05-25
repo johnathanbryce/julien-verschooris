@@ -33,7 +33,7 @@ function Hero() {
           </button>
           <div className={styles.content_container}>
             <div className={styles.intro_content_wrapper}>
-              <h1><span className={styles.firstname}>JULIEN</span> VERSCHOORIS </h1>
+              <h1 className={styles.fade_in}><span className={styles.firstname}>JULIEN</span> VERSCHOORIS </h1>
               <p> A multi award-winning, CASMA-nominated composer, scoring features, and short films as well as commercial music for trailers and branding placements.</p>
               <div className={styles.btn_container}><Button label={'Learn More'} src="about"isTransparent={true} /></div>
             </div>
@@ -43,11 +43,11 @@ function Hero() {
             <div className={styles.icons_container}>
               <SocialMediaIcon icon={<SiImdb />} src='https://www.imdb.com/name/nm8653985/' />
               <SocialMediaIcon icon={<TbBrandSpotify />} src='https://open.spotify.com/artist/0vJxBMqJnP2vbqFAxUWR9t?si=UDb8Xds6RReXtgMMnZ0jmw'/>   
-              <SocialMediaIcon icon={<FaInstagram />} src='https://www.instagram.com/julienverschooris//'/> 
+              <SocialMediaIcon icon={<FaInstagram />} src='https://www.instagram.com/julienverschooris/'/> 
             </div>
             <div className={styles.squares_container}>
-              <HeroSquare label="VIEW WORK" src='selected-media-clips'/>
-              <HeroSquare label="LISTEN TO MUSIC" src='reel' />
+              <HeroSquare label="VIEW WORK" src='reel'/>
+              <HeroSquare label="LISTEN TO MUSIC" src='music' />
               <HeroSquare label="LEARN MORE" src='about'/>
             </div>      
           </div>

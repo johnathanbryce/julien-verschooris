@@ -7,7 +7,7 @@ function MusicSection() {
   return (
     <Layout>
       <section className={styles.music} id="music">
-        <h2> Julien Verschooris' Music </h2>
+        <h2> Music </h2>
         <ReelCrafterPlayer />
       </section>
     </Layout>

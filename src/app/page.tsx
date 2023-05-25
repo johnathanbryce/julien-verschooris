@@ -12,6 +12,7 @@ import Credits from './Home/Credits/Credits'
 // internal components
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
+import WebsiteCredit from '@/components/WebsiteCredit/WebsiteCredit'
 
 export default function Home() {
   return (
@@ -33,7 +34,8 @@ export default function Home() {
       <div className={styles.full_width_bg_color}>
         <div className={styles.horizontal_line_break}></div>
       </div>
-      <Footer />   
+      <Footer /> 
+      <WebsiteCredit />  
     </>
   )
 }

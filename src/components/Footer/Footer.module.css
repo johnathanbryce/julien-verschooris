@@ -19,23 +19,87 @@
     flex: 1.4;
 }
 
-.other, .contact{
+.contact_btn, .contact{
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.footer_left p, .footer_left div p, .contact div p, .other div p {
+.footer_left p, .footer_left div p, .contact div p, .other div p, .footer a {
     font-size: clamp(1.2rem, 2vw, 1.6rem)
 }
+
+.footer a{
+    display: block;
+    color: white;
+}
+
+.footer a:hover{
+    color: var(--highlightColor);
+}
+
+.contact_btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.button_container{
+    width: 18rem; 
+}
+
+.button_normal{
+    padding: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.button_normal{
+    border: 0.1rem solid white;
+    background-color: var(--backgroundColorFlip);
+    color: var(--primaryColor)
+}
+
+
+.button_normal:hover {
+    color: var(--highlightColor);
+    transition: var(--hoverTransition);
+    font-weight: bold;
+}
+
 
 /* Phones / Very Small Web Screens */
 @media only screen and (max-width: 1200px){
     .footer_left, .footer_right{
         flex: 1;
     }
-    .other{
+    .contact_btn{
         display: none;
     }
 }
+
+
+/* Phones / Tiny Screens */
+@media only screen and (max-width: 500px){
+    .button_container{
+        width: 12.5rem; 
+    }
+    .button_normal{
+        padding: 1rem;
+        letter-spacing: 0.1rem;
+    } 
+}
+
+/* Small Phone Screens */
+@media only screen and (max-width: 380px){
+    .button_container{
+        width: 10.5rem; 
+    }
+
+    .button_normal{
+        padding: 0.5rem;
+        letter-spacing: 0rem;
+    } 
+}
+
 

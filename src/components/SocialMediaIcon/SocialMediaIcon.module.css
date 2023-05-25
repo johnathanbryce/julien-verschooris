@@ -2,11 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
+    width: 5.5rem;
+    height: 5.5rem;
     border-radius: 5rem;
     color: var(--primaryColor);
-    font-size: clamp(1.5rem, 2vw, 2.4rem);
+    font-size: clamp(1.5rem, 2.5vw, 3.25rem);
     background-color: white;
 }
 

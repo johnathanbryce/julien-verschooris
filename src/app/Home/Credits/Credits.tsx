@@ -36,7 +36,7 @@ function Credits() {
                 </div>
               </div>
             </CreditsAccordion>
-            <CreditsAccordion title={'Trailers'}>
+            <CreditsAccordion title={'Commercial'}>
               <div className={styles.credit_expandable_wrapper}>
                 <p> iOS Reveal - 2022 <span className={styles.highlight}>Apple</span></p>
                 <p> Made for Love - 2021 <span className={styles.highlight}>HBO Max</span></p>
