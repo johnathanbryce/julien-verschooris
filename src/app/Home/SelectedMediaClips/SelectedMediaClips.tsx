@@ -27,7 +27,7 @@ function SelectedMediaClips() {
               <VideoClip src="/madeForLove.mp4" border='none'/>
               <MediaClip
                 title='Made for Love Official Teaser'
-                description="A custom trailer arrangement of Beyoncé's 'Crazy in Love'"
+                description="A custom trailer arrangement of Beyonce's 'Crazy in Love', lyrics performed by Ray Romano."
                 subtitle="Show: Made for Love"
                 credit="Song: Crazy in Love by Beyonce (Trailer Remix)"
                 publisher="Publisher: Phoenician Order Music"
@@ -36,11 +36,11 @@ function SelectedMediaClips() {
               />
             </div>
           </div>
-          {/*SMALL SCREEN STACKED COLUMN LAYOUT (<800px screen width): */}
+          {/*SMALL SCREEN STACKED COLUMN LAYOUT (<1300px screen width): */}
           <div className={styles.media_container_small_screen}>
               <MediaClipSmallScreen 
                   title='Made for Love Official Teaser'
-                  description="A custom trailer arrangement of Beyoncé's 'Crazy in Love."
+                  description="A custom trailer arrangement of Beyonce's 'Crazy in Love', lyrics performed by Ray Romano.."
                   imageSrc={madeForLove}
                   videoSrc='/madeForLove.mp4'
               />

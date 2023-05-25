@@ -1,4 +1,6 @@
 .video_container{
+    display: grid;
+    place-items: center;
     width: 100%;
     position: relative;
 }
@@ -7,8 +9,8 @@
     border: 0.2rem solid white;
 }
 .video_clip_light, .video_clip_no_border {
-    height: 100%;
     width: 100%;
+    height: 101%;
 }
 
 .play_button, .audio_button_pause {
@@ -51,11 +53,6 @@
         top: 30%;
         left: 40%;
     }
-}
-
-/* Small Phone Screens */
-@media only screen and (max-width: 520px){
-
 }
 
 /* Very Small Phone Screens */

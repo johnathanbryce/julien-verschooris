@@ -12,15 +12,16 @@ function FeaturedWork() {
     <section className={styles.featured_work} id="featured">
       <MainBioImage />
       <h2>Featured Work</h2>
+      
       <div className={styles.featured_work_content}>
           <VideoClip src="/coextinction.mp4" border="light" />
-
       </div>
+
       {/*SMALL SCREEN STACKED COLUMN LAYOUT (<800px screen width): */}
       <div className={styles.media_container_small_screen}>
         <MediaClipSmallScreen 
           title='Coextinction Trailer'
-          description="A track from Phoenician Order Music catalog used in the the documentary 'Coextinction'."
+          description="Trailer for the Canadian Screen Award nominated & CASMA nominated documentary Coextinction."
           imageSrc={coextinctionPoster}
           videoSrc='/coextinction.mp4'
         />
