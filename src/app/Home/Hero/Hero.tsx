@@ -46,7 +46,7 @@ function Hero() {
               <SocialMediaIcon icon={<FaInstagram />} src='https://www.instagram.com/julienverschooris/'/> 
             </div>
             <div className={styles.squares_container}>
-              <HeroSquare label="VIEW WORK" src='reel'/>
+              <HeroSquare label="VIEW WORK" src='featured'/>
               <HeroSquare label="LISTEN TO MUSIC" src='music' />
               <HeroSquare label="LEARN MORE" src='about'/>
             </div>      

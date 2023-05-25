@@ -1,4 +1,6 @@
 .video_container{
+    display: grid;
+    place-items: center;
     width: 100%;
     position: relative;
 }
@@ -28,40 +30,10 @@
     transition: var(--hoverTransition);
 }
 
-
-/* Smaller Screen Rezise */
-@media only screen and (max-width: 1200px){
-    .featured_work{
-        padding: 4rem 5rem;
-    }
-}
-
-/* Phones / Very Small Web Screens */
-@media only screen and (max-width: 800px){
-/*     .play_button {
-        top: 32.5%;
-    } */
-}
-
-/* Phones / Tiny Screens */
-@media only screen and (max-width: 650px){
-/*     .play_button {
-        top: 30%;
-        left: 40%;
-    } */
-}
-
 /* Small Phone Screens */
 @media only screen and (max-width: 520px){
     .play_button {
         top: 18%;
         left: 28%;
     }
-}
-
-/* Very Small Phone Screens */
-@media only screen and (max-width: 420px){
-/*     .play_button {
-        top: 25%;
-    } */
 }

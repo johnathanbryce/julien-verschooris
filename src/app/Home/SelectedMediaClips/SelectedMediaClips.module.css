@@ -41,13 +41,13 @@
 /*  Small Web Screens */
 @media only screen and (max-width: 1350px){
     .media_clip_container{
-        width: 45%;
+        width: 46%;
     }
 }
 
 /* LAYOUT CHANGES HERE -- CAROUSEL IS REPLACED BY STANDARD COLUMN LAYOUT*/
 /* Very Small Web Screens */
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1300px){
     .selected_media_column_gap{
         display: flex;
         flex-direction: column;
@@ -65,14 +65,4 @@
         width: 100%;
 
     }
-}
-
-/* Phones / Tiny Screens */
-@media only screen and (max-width: 550px){
-
-}
-
-/* Small Phone Screens */
-@media only screen and (max-width: 420px){
-
 }

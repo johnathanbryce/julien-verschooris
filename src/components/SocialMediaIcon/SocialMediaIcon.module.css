@@ -6,7 +6,7 @@
     height: 5.5rem;
     border-radius: 5rem;
     color: var(--primaryColor);
-    font-size: clamp(1.5rem, 2.5vw, 3.25rem);
+    font-size: clamp(2.2rem, 2.5vw, 3.25rem);
     background-color: white;
 }
 
@@ -19,4 +19,12 @@
     color: var(--highlightColor);
     transition: var(--hoverTransition);
 
+}
+
+/* Phones / Tiny Screens */
+@media only screen and (max-width: 550px){
+    .icon_container{
+        width: 4rem;
+        height: 4rem;
+    }
 }
