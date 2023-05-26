@@ -14,10 +14,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 0.5rem solid var(--backgroundColorFlip);
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 .media_clip_container_highlight{
     width: 100%;
-    border: 0.1rem solid var(--primaryColor);
+    border: 0.01rem solid black; /* removes small white gap between video and text container */
 }
 
 .media_container{
@@ -27,11 +29,13 @@
    /*  gap: 3rem; */                /* NOTE: add in when adding more media clips AND INCREASE WIDTH */
     width: 100%;                    /* NOTE: INCREASE WIDTH WITH MORE CONTENT */
     margin-bottom: 5rem;
+
 }
 
 .media_clip_container{
-    border: 0.1rem solid var(--primaryColor);
     width: 54.5rem;
+    border: 0.5rem solid var(--backgroundColorFlip);
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
 .media_container_small_screen{

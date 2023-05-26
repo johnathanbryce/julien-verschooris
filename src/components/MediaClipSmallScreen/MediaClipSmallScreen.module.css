@@ -4,7 +4,9 @@
     gap: 2.5rem;
     background-color: var(--primaryColor);
     padding: 2rem;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
+    border: 0.5rem solid var(--backgroundColorFlip);
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
 .clip_container_row_reverse{
@@ -15,7 +17,8 @@
     background-color: var(--primaryColor);
     padding: 2rem;
     border-radius: 0.5rem;
-
+    border: 0.5rem solid var(--backgroundColorFlip);
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
 .text_container * {

@@ -2,7 +2,7 @@
    /* primary & default colors */
    --primaryColor: #011F26;
    --highlightColor: #ACD1F2;
-   --tertiaryColor: #919091;
+   --tertiaryColor: rgba(145, 144, 145, 0.2);
 
     --backgroundColor: #011F26;
     --backgroundColorFlip: white;

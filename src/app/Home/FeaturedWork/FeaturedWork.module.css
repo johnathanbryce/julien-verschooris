@@ -66,8 +66,6 @@
     .media_container_small_screen{
         display: block;
         padding: 2.5rem 0;
-        border: 1px solid red;
-
     }
 }
 

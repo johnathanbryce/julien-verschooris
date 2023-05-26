@@ -2,7 +2,7 @@ import styles from './Footer.module.css'
 
 function Footer() {
   return (
-    <section className={styles.footer} id="contact">
+    <footer className={styles.footer} id="contact">
       {/* <div className={}></div> */}
       <div className={styles.footer_left}>
         <h5> JV. </h5>
@@ -30,7 +30,7 @@ function Footer() {
           </div>  
         </div>
       </div>
-    </section>
+    </footer>
   )
 }
 

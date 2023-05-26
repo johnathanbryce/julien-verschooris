@@ -33,7 +33,7 @@ function Hero() {
           </button>
           <div className={styles.content_container}>
             <div className={styles.intro_content_wrapper}>
-              <h1 className={styles.fade_in}><span className={styles.firstname}>JULIEN</span> VERSCHOORIS </h1>
+              <h1><span className={styles.firstname}>JULIEN</span> VERSCHOORIS </h1>
               <p> A multi award-winning, CASMA-nominated composer, scoring features, and short films as well as commercial music for trailers and branding placements.</p>
               <div className={styles.btn_container}><Button label={'Learn More'} src="about"isTransparent={true} /></div>
             </div>

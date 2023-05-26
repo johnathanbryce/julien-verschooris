@@ -16,7 +16,7 @@ import WebsiteCredit from '@/components/WebsiteCredit/WebsiteCredit'
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Header />
       <Hero />
       <Nominee />
@@ -36,7 +36,7 @@ export default function Home() {
       </div>
       <Footer /> 
       <WebsiteCredit />  
-    </>
+    </main>
   )
 }
 

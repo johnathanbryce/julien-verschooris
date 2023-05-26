@@ -62,26 +62,6 @@ const Header = () => {
         </ul>
       </nav>
       }
-
-
-{/*         <nav className={styles.navbar_dropdown} ref={dropdownRef}  >
-        <div className={`${styles.hamburger} ${isDropdownActive ? styles.hamburger_active : '' }`} onClick={toggleDropdown}>
-            <div className={styles.bar} ></div>
-            <div className={styles.bar} ></div>
-            <div className={styles.bar} ></div>
-        </div> 
-            <ul className={`${styles.menu_nav} ${isDropdownActive ? styles.show_menu : '' }`}>
-                <li className={styles.menu_link}><Link to="about" onClick={onNavItemClickCloseDropdown} spy={true} smooth={true} duration={500} offset={10} > ABOUT </Link></li> 
-                <li className={styles.menu_link}><Link to="music" onClick={onNavItemClickCloseDropdown} spy={true} smooth={true} duration={500} offset={10} > MUSIC </Link></li>
-                <li className={styles.menu_link}><Link to="reel" onClick={onNavItemClickCloseDropdown} spy={true} smooth={true} duration={500}  offset={10}> REEL </Link></li>  
-                <li className={styles.menu_link}><Link to="credits" onClick={onNavItemClickCloseDropdown} spy={true} smooth={true} duration={500} offset={10} > CREDITS </Link></li>     
-                <li className={styles.menu_link}><Link to="contact" onClick={onNavItemClickCloseDropdown} spy={true} smooth={true} duration={500} offset={10} > CONTACT </Link></li>
-            </ul>
-        </nav> */}
-        {/* Applies an opacity to the remainder of the content underneath the menu navbar drop down */}
-        {/* <div className={ isDropdownActive ? styles.shade_content : undefined}> </div> */}
-
-
     </header>
 
   )
