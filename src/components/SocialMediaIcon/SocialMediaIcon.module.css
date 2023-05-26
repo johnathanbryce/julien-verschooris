@@ -12,7 +12,7 @@
 
 .icon{
     cursor: pointer;
-    z-index: 99999;
+    z-index: 9;
 }
 
  .icon_container:hover{

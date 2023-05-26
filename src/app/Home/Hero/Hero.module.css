@@ -5,23 +5,6 @@
     height: 100vh;
     margin-bottom: -2rem;
 }
-
-@keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-  
-  .fade_in {
-    animation: fade-in 1.5s ease-in 2s;
-  }
-
 .background_clip {
     z-index: -999;
     width: 100%;
@@ -145,11 +128,12 @@
 /* Phones / Tiny Screens */
 @media only screen and (max-width: 550px){
     .hero{
-        margin-bottom: -7rem;
+        margin-bottom: -5rem;
     }
 
     .bottom_container{
         bottom: 12rem;
+
     }
 
     .icons_container{

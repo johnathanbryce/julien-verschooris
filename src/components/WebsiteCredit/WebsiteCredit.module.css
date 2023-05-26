@@ -1,8 +1,14 @@
 
+.credit{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--primaryColor);
+}
+
 .dev_promo{
     text-align: center;
     padding-bottom: 2rem;
-    background-color: var(--primaryColor);
     color: white;
     font-size: clamp(1rem, 1.8vw, 1.4rem);
 }
@@ -10,3 +16,4 @@
 .dev_promo a:hover{
     color: var(--highlightColor)
 }
+
