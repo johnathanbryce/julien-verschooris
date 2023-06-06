@@ -25,9 +25,11 @@ function Nominee() {
             <h3> Nominee for best original score for a documentary feature film</h3>
             <h4> Coextinction 2022</h4>
             <div className={styles.watch_container}>
-              <Link to="featured" spy={true} smooth={true} duration={500} offset={50}>
-                <p> WATCH HERE  <BsPlayFill className={styles.watch_button}/></p>
-              </Link>
+{/*               <Link to="featured" spy={true} smooth={true} duration={500} offset={50}> */}
+                <a href="https://www.youtube.com/watch?v=phtDEvl63vc&ab_channel=CoexistenceFilms" target="_blank">
+                  <p> WATCH HERE  <BsPlayFill className={styles.watch_button}/></p>
+                </a>
+          {/*     </Link> */}
             </div>
           </div>
         </section>

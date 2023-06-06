@@ -5,7 +5,7 @@ import MainBioImage from '@/components/MainBioImage/MainBioImage'
 import VideoClip from '@/components/VideoClip/VideoClip'
 import MediaClipSmallScreen from '@/components/MediaClipSmallScreen/MediaClipSmallScreen'
 // internal assets
-import coextinctionPoster from '../../../../public/images/coexPoster.jpg'
+import natureConservatory from '../../../../public/images/natureConservatory.jpg'
 
 function FeaturedWork() {
   return (
@@ -14,16 +14,16 @@ function FeaturedWork() {
       <h2>Featured Work</h2>
       
       <div className={styles.featured_work_content}>
-          <VideoClip src="/coextinction.mp4" border="light" />
+          <VideoClip src="/natureConservatory.mp4" border="light" />
       </div>
 
       {/*SMALL SCREEN STACKED COLUMN LAYOUT (<800px screen width): */}
       <div className={styles.media_container_small_screen}>
         <MediaClipSmallScreen 
-          title='Coextinction Trailer'
-          description="Trailer for the Canadian Screen Award nominated & CASMA nominated documentary Coextinction."
-          imageSrc={coextinctionPoster}
-          videoSrc='/coextinction.mp4'
+          title='Nature Conservancy USA'
+          description="Recent score for The Nature Conservancy USA."
+          imageSrc={natureConservatory}
+          videoSrc='/natureConservatory.mp4'
         />
 
       </div>
