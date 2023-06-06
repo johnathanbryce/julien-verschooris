@@ -27,7 +27,7 @@
     flex-direction: row;
     justify-content: space-around;
    /*  gap: 3rem; */                /* NOTE: add in when adding more media clips AND INCREASE WIDTH */
-    width: 100%;                    /* NOTE: INCREASE WIDTH WITH MORE CONTENT */
+    width: 150%;                    /* NOTE: INCREASE WIDTH WITH MORE CONTENT */
     margin-bottom: 5rem;
 
 }

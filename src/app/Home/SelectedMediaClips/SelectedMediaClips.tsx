@@ -5,6 +5,7 @@ import clioGrandAward from '../../../../public/images/clioGrandAward.png'
 import madeForLove from '../../../../public/images/madeForLove.jpg'
 import theOperative from '../../../../public/images/theOperative.jpg'
 import appleWatch from '../../../../public/images/appleWatch.jpg'
+import coextinction from '../../../../public/images/coexPoster.jpg'
 // internal components
 import Layout from '@/components/Layout/Layout'
 import MediaClip from '@/components/MediaClip/MediaClip';
@@ -24,38 +25,46 @@ function SelectedMediaClips() {
           <h2> Selected Media Clips </h2>
           <div  className={styles.media_container_highlight}>
             <div className={styles.media_clip_container_highlight}>
-              <VideoClip src="/madeForLove.mp4" border='none'/>
+              <VideoClip src="/coextinction.mp4" border='none'/>
               <MediaClip
-                title='Made for Love Official Teaser'
-                description="A custom trailer arrangement of Beyonce's 'Crazy in Love', lyrics performed by Ray Romano."
-                subtitle="Show: Made for Love"
-                credit="Song: Crazy in Love by Beyonce (Trailer Remix)"
-                publisher="Publisher: Phoenician Order Music"
-                winner={true}
-                winnerImageSrc={clioGrandAward}
+                title='Coextinction Trailer'
+                description="Trailer for the Canadian Screen Award nominated & CASMA nominated documentary Coextinction."
+                subtitle=""
+                credit=""
+                publisher=""
+                winner={false}
+                winnerImageSrc={''}
               />
             </div>
           </div>
           {/*SMALL SCREEN STACKED COLUMN LAYOUT (<1300px screen width): */}
           <div className={styles.media_container_small_screen}>
               <MediaClipSmallScreen 
+                  title='Coextinction Trailer'
+                  description="Trailer for the Canadian Screen Award nominated & CASMA nominated documentary Coextinction.."
+                  imageSrc={coextinction}
+                  videoSrc='/coextinction.mp4'
+              />
+              <MediaClipSmallScreen 
                   title='Made for Love Official Teaser'
                   description="A custom trailer arrangement of Beyonce's 'Crazy in Love', lyrics performed by Ray Romano.."
                   imageSrc={madeForLove}
                   videoSrc='/madeForLove.mp4'
+                  isRowReverse={true}
               />
               <MediaClipSmallScreen 
                   title='Apple Watch Series 6'
                   description="A custom trailer arrangement of Kelly Lee Owen's 'On'."
                   imageSrc={appleWatch}
                   videoSrc='/appleWatch.mp4'
-                  isRowReverse={true}
+                  
               />
               <MediaClipSmallScreen 
                   title='The Operative Trailer'
                   description="A track from Phoenician Order Music catalog used in the trailer."
                   imageSrc={theOperative}
                   videoSrc='/theOperative.mp4'
+                  isRowReverse={true}
               />
           </div>
           {/* ///////////////////////////////////////////////////// */}

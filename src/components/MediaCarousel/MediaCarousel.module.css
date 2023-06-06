@@ -25,10 +25,6 @@
     color: var(--highlightColor);
 }
 
-.arrow_left, .arrow_right{
-    opacity: 0; /* REMOVE THIS WHEN MORE VIDEOS ADDED TO SELECTED MEDIA CLIPS CAROUSEL */
-}
-
 
 /* Very Small Web Screens */
 @media only screen and (max-width: 800px){
