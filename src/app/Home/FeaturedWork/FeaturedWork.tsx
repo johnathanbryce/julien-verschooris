@@ -22,7 +22,7 @@ function FeaturedWork() {
       <div className={styles.media_container_small_screen}>
         <MediaClipSmallScreen 
           title='Ferrari'
-          description="Dive into the heart of racing with the official trailer for 'Ferrari,' enhanced by the electrifying score from Julien, showcasing the legendary tale of passion and innovation."
+          description="Dive into the heart of racing with the official trailer for 'Ferrari,' enhanced by the electrifying track from Julien, showcasing the legendary tale of passion and innovation."
           imageSrc={ferrari}
           videoSrc='/ferrari.mp4'
         />
