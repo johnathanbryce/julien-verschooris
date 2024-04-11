@@ -6,6 +6,7 @@ import madeForLove from '../../../../public/images/madeForLove.jpg'
 import theOperative from '../../../../public/images/theOperative.jpg'
 import appleWatch from '../../../../public/images/appleWatch.jpg'
 import coextinction from '../../../../public/images/coexPoster.jpg'
+import natureConservancy from '../../../../public/images/natureConservatory.jpg'
 // internal components
 import Layout from '@/components/Layout/Layout'
 import MediaClip from '@/components/MediaClip/MediaClip';
@@ -66,6 +67,12 @@ function SelectedMediaClips() {
                   videoSrc='/theOperative.mp4'
                   isRowReverse={true}
               />
+{/*               <MediaClipSmallScreen 
+                  title='Nature Conservancy USA'
+                  description="Recent score for The Nature Conservancy, USA"
+                  imageSrc={natureConservancy}
+                  videoSrc='/natureConservancy.mp4'
+              /> */}
           </div>
           {/* ///////////////////////////////////////////////////// */}
           </div>

@@ -19,6 +19,8 @@ function Nominee() {
               className={styles.casma_image}      
               src={nominee}
               alt="the icon of the CASMA Nominee 2022 award"
+              height={300}
+              width={300}
             />
           </div>
           <div className={styles.text_container}>
