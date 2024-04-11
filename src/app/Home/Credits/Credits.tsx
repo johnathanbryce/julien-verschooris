@@ -20,6 +20,8 @@ function Credits() {
               <div className={styles.credit_expandable_wrapper}>
                 <div>
                   <h6 className={styles.highlight}>Features</h6>
+                  <p> A Thousand Cuts - 2024</p>
+                  <p> For God's Sake Wake Her Up - 2024</p>
                   <p> It's Just Parkinson's - 2022</p>
                   <p> Ghosts of Christmas Past - 2021</p>
                   <p> Coextinction - 2021 </p>
@@ -28,6 +30,9 @@ function Credits() {
                 </div>
                 <div>
                   <h6 className={styles.highlight}>Shorts</h6>
+                  <p> The Spirit Who Swims - 2024</p>
+                  <p> Warrior Spirit - 2023</p>
+                  <p> A Disappearing Forest - 2023</p>
                   <p> Flyer Boys - 2022</p>
                   <p> Where I'll Find You - 2022</p>
                   <p> Dream - 2021 </p>
@@ -38,6 +43,7 @@ function Credits() {
             </CreditsAccordion>
             <CreditsAccordion title={'Commercial'}>
               <div className={styles.credit_expandable_wrapper}>
+                <p> Ferrari Trailer - 2023 <span className={styles.highlight}>Neon</span></p>
                 <p> iOS Reveal - 2022 <span className={styles.highlight}>Apple</span></p>
                 <p> Made for Love - 2021 <span className={styles.highlight}>HBO Max</span></p>
                 <p> Apple Watch Reveal - 2020 <span className={styles.highlight}>Apple</span></p>
@@ -47,6 +53,10 @@ function Credits() {
             </CreditsAccordion>
             <CreditsAccordion title={'Awards'}>
               <div className={styles.credit_expandable_wrapper}>
+                <div>
+                  <h6 className={styles.highlight}>SOCAN Emerging Screen Composer</h6>
+                  <p> A Disappearing Forest - Best Original Score </p>
+                </div>   
                 <div>
                   <h6 className={styles.highlight}>Independent Horror Movie Awards</h6>
                   <p> Blood & Guts - Best Music 2019 (Winner) </p>
@@ -74,7 +84,9 @@ function Credits() {
         {creditsPosterList.map((propsList, index) => {
                   return (
                     <div className={styles.media_clip_container} key={index}>
-                      <Image src={propsList} alt={''} className={styles.poster_image} />
+                      <Image src={propsList} alt={''} className={styles.poster_image}             
+                        height={200}
+                        width={200} />
                     </div>
                   ) 
         })}

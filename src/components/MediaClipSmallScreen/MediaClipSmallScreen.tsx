@@ -34,7 +34,7 @@ function MediaClipSmallScreen({ title, description, imageSrc, isRowReverse,  vid
   return (
     <div className={isRowReverse ? styles.clip_container_row_reverse : styles.clip_container}>
         <div className={styles.image_container}>
-            <Image src={imageSrc} alt="" className={styles.image}/>
+            <Image src={imageSrc} alt="" className={styles.image} height={300} width={300}/>
         </div>
       <div className={styles.text_container}>
         <h5> {title}</h5>
@@ -46,7 +46,7 @@ function MediaClipSmallScreen({ title, description, imageSrc, isRowReverse,  vid
         { isVideoModalActive && <VideoModal videoSrc={videoSrc} onClickCloseModal={onClickCloseVideoModal} />}
         
       </div>
-      {winner ? <Image src={winnerImageSrc} alt="Nominee Image" className={styles.winner_image} /> : (null)}
+      {winner ? <Image src={winnerImageSrc} alt="Nominee Image" className={styles.winner_image} height={200} width={200}/> : (null)}
     </div>
   )
 }

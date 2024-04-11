@@ -22,7 +22,7 @@ function MediaClip({ title, description, publisher, subtitle, credit, winner, wi
         <p> {credit}</p>
         <p> {publisher}</p>
       </div>
-      {winner ? <Image src={winnerImageSrc} alt="Nominee Image" className={styles.winner_image} /> : (null)}
+      {winner ? <Image src={winnerImageSrc} alt="Nominee Image" className={styles.winner_image} height={200} width={200} /> : (null)}
     </div>
   )
 }
