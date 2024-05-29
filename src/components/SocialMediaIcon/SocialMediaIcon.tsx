@@ -4,13 +4,16 @@ import Link from 'next/link'
 
 interface SocialMediaIconProps{
     icon: any,
-    src: string
+    src: string,
+    label: string,
 }
 
-function SocialMediaIcon({icon, src}: SocialMediaIconProps) {
+function SocialMediaIcon({icon, src, label}: SocialMediaIconProps) {
 
   return (
-    <a href={src} className={styles.icon} target='_blank' rel="noopener noreferrer"><div className={styles.icon_container}>{icon}</div></a>
+    <Link href={src} className={styles.icon} aria-label={label}target='_blank' rel="noopener noreferrer">
+      <div className={styles.icon_container}>{icon}</div>
+    </Link>
   )
 }
 

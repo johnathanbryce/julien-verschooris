@@ -7,8 +7,12 @@ function Footer() {
       <div className={styles.footer_left}>
         <h5> JV. </h5>
         <div>
-          <a href="tel:4169612777"> Phone: 416.961.2777</a>
-          <a href="mailto:info@meridianartists.com?subject=Inquire%20Julien%20Verschooris" target="_blank" rel="noreferrer"> Email: info@meridianartists.com </a>
+          <a href="tel:4169612777"> 
+             Phone: 416.961.2777
+          </a>
+          <a href="mailto:info@meridianartists.com?subject=Inquire%20Julien%20Verschooris" target="_blank" rel="noreferrer"> 
+             Email: info@meridianartists.com 
+          </a>
         </div>
         <p> &copy; 2023 - Julien Verschooris</p>
       </div>

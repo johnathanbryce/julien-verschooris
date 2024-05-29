@@ -15,9 +15,9 @@ function Button({ label, isTransparent, onClick, src}: ButtonProps) {
     <Link to={src} smooth={true} duration={500}>
       <div className={styles.button_container} onClick={onClick}>
         { isTransparent ?
-          <button className={styles.button_transparent}> {label} </button>
+          <button className={styles.button_transparent} aria-label={label}> {label} </button>
           :
-          <button className={styles.button_normal}> {label} </button>
+          <button className={styles.button_normal} aria-label={label}> {label} </button>
         }
       </div>  
     </Link>   

@@ -4,7 +4,7 @@ import styles from './SelectedMediaClips.module.css'
 import clioGrandAward from '../../../../public/images/clioGrandAward.png'
 import madeForLove from '../../../../public/images/madeForLove.jpg'
 import theOperative from '../../../../public/images/theOperative.jpg'
-import appleWatch from '../../../../public/images/appleWatch.jpg'
+import appleWatch from '../../../../public/images/appleWatch.png'
 import coextinction from '../../../../public/images/coexPoster.jpg'
 import natureConservancy from '../../../../public/images/natureConservatory.jpg'
 // internal components

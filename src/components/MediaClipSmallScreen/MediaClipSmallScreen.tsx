@@ -22,12 +22,10 @@ function MediaClipSmallScreen({ title, description, imageSrc, isRowReverse,  vid
   const [isVideoModalActive, setIsVideoModalActive] = useState(false);
 
   const onClickOpenVideoModal = () => {
-    console.log('open video')
     setIsVideoModalActive(true);                                               
   }
 
   const onClickCloseVideoModal = () => {
-    console.log('close video')
     setIsVideoModalActive(false);                                               
   }
 
