@@ -1,10 +1,9 @@
 .featured_work{
-    background-image: url('../../../../public/images/featuredWorkBG.jpg');
+    background-image: url('../../../../public/images/featuredWorkBG.webp');
     background-size: cover;
     background-position: center;
     padding: 4rem 10%;
 }
-
 
 .featured_work_content{
     display: flex;

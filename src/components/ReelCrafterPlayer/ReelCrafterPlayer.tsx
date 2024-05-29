@@ -6,7 +6,7 @@ function ReelCrafterPlayer() {
       <iframe
       className={styles.iframe_container}
       width="100%"
-      scrolling="no"
+      title="Julien's Scores Compilation"
       src="https://play.reelcrafter.com/embed/a7d397b8-f5aa-4f16-98ed-ffe810f0555d">
     </iframe>
     </section>

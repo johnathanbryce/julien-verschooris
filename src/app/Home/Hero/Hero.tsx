@@ -41,9 +41,9 @@ function Hero() {
 
           <div className={styles.bottom_container}>
             <div className={styles.icons_container}>
-              <SocialMediaIcon icon={<SiImdb />} src='https://www.imdb.com/name/nm8653985/' />
-              <SocialMediaIcon icon={<TbBrandSpotify />} src='https://open.spotify.com/artist/0vJxBMqJnP2vbqFAxUWR9t?si=UDb8Xds6RReXtgMMnZ0jmw'/>   
-              <SocialMediaIcon icon={<FaInstagram />} src='https://www.instagram.com/julienverschooris/'/> 
+              <SocialMediaIcon icon={<SiImdb />} src='https://www.imdb.com/name/nm8653985/' label="Julien's IMDB Profile"/>
+              <SocialMediaIcon icon={<TbBrandSpotify />} src='https://open.spotify.com/artist/0vJxBMqJnP2vbqFAxUWR9t?si=UDb8Xds6RReXtgMMnZ0jmw' label="Julien's Spotify Profile"/>   
+              <SocialMediaIcon icon={<FaInstagram />} src='https://www.instagram.com/julienverschooris/' label="Julien's Instagram Profile"/> 
             </div>
             <div className={styles.squares_container}>
               <HeroSquare label="VIEW WORK" src='featured'/>
